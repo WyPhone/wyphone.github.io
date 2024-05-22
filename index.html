@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WyPhone - You Break It, We Fix It</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">WyPhone</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quote">Get a Quote</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#phone-cases">Phone Cases</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <img src="https://via.placeholder.com/600x400" alt="Electronic Repair" class="hero-image">
+            <div class="hero-text">
+                <h1>Fast, Reliable Electronic Repairs</h1>
+                <p>We fix anything electronic. Get a quote today!</p>
+                <a href="#quote" class="btn">Get a Quote</a>
+            </div>
+        </div>
+        <div class="about">
+            <h2>About Us</h2>
+            <p>At WyPhone, we are dedicated to providing top-notch repair services for all your electronic devices. With years of experience, we guarantee satisfaction and quality.</p>
+        </div>
+        <div class="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Smartphone Repair</li>
+                <li>Tablet Repair</li>
+                <li>Laptop Repair</li>
+                <li>Gaming Console Repair</li>
+                <li>And More...</li>
+            </ul>
+        </div>
+        <div class="why-choose-us">
+            <h2>Why Choose Us</h2>
+            <ul>
+                <li>Quick Turnaround</li>
+                <li>Experienced Technicians</li>
+                <li>Quality Parts</li>
+                <li>Excellent Customer Service</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="quote">
+        <h2>Get a Quote</h2>
+        <form id="quote-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="device">Device Type</label>
+            <input type="text" id="device" name="device" required>
+
+            <label for="issue">Issue Description</label>
+            <textarea id="issue" name="issue" required></textarea>
+
+            <label for="images">Upload Images (optional)</label>
+            <input type="file" id="images" name="images" multiple>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: 431-775-9456</p>
+        <p>Email: <a href="mailto:wyphone24@gmail.com">wyphone24@gmail.com</a></p>
+        <p>Address: 8 Tulip Bay, Morden, MB, Canada R6M 1H8</p>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086379327038!2d-97.94967908468182!3d49.19131757932312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b99000d6a1e1f3%3A0x5c8c84b7d8c1e0c1!2s8%20Tulip%20Bay%2C%20Morden%2C%20MB%20R6M%201H8%2C%20Canada!5e0!3m2!1sen!2sus!4v1618261982061!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <form id="contact-form">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <label for="contact-phone">Phone Number</label>
+            <input type="tel" id="contact-phone" name="contact-phone" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div class="business-hours">
+            <h3>Business Hours</h3>
+            <p>Monday - Friday: 9 AM - 6 PM</p>
+            <p>Saturday: 10 AM - 4 PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+    </section>
+
+    <section id="phone-cases">
+        <h2>Phone Cases</h2>
+        <div class="product-gallery">
+            <!-- Product items will be inserted here -->
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            <!-- Cart items will be inserted here -->
+        </div>
+        <div class="cart-total">
+            <h3>Total: $<span id="cart-total-amount">0.00</span></h3>
+            <button id="checkout-btn" class="btn">Checkout</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 WyPhone. All rights reserved.</p>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#quote">Get a Quote</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#phone-cases">Phone Cases</a></li>
+            <li><a href="#cart">Cart</a></li>
+        </ul>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
