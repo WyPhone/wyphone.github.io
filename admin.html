@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - WyPhone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .admin-container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .admin-section {
+            margin-bottom: 30px;
+        }
+
+        .admin-section h3 {
+            margin-bottom: 10px;
+        }
+
+        .admin-section input[type="text"], .admin-section input[type="file"], .admin-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .admin-section button {
+            padding: 10px 20px;
+            background-color: #00b4d8;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Admin Panel - WyPhone</h1>
+
+        <div class="admin-section">
+            <h3>Edit Home Section</h3>
+            <label for="home-title">Title</label>
+            <input type="text" id="home-title" value="Welcome to WyPhone">
+            <label for="home-text">Text</label>
+            <textarea id="home-text">Protect Your Device in Style with WyPhone's Premium Phone Cases</textarea>
+            <label for="home-image">Image</label>
+            <input type="file" id="home-image">
+            <button onclick="updateHome()">Save Changes</button>
+        </div>
+
+        <div class="admin-section">
+            <h3>Edit Shop Section</h3>
+            <label for="product1-title">Product 1 Title</label>
+            <input type="text" id="product1-title" value="Phone Case 1">
+            <label for="product1-price">Product 1 Price</label>
+            <input type="text" id="product1-price" value="$35">
+            <label for="product1-image">Product 1 Image</label>
+            <input type="file" id="product1-image">
+            <button onclick="updateShop()">Save Changes</button>
+        </div>
+
+        <div class="admin-section">
+            <h3>Edit About Us Section</h3>
+            <label for="about-text">Text</label>
+            <textarea id="about-text">Established in 2024, WyPhone is dedicated to providing high-quality phone cases that blend style and functionality seamlessly...</textarea>
+            <button onclick="updateAbout()">Save Changes</button>
+        </div>
+
+        <div class="admin-section">
+            <h3>Edit Contact Section</h3>
+            <label for="contact-text">Text</label>
+            <textarea id="contact-text">Got a question or need assistance? Feel free to reach out to us!...</textarea>
+            <button onclick="updateContact()">Save Changes</button>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
